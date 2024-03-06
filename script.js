@@ -67,11 +67,32 @@ function slideShow(userNumber) {
   startAutoSlide();
 }
 
+// window.onload = function () {
+//   slideShow(1);
+//   slideShow(2);
+//   slideShow(3);
+//   slideShow(4);
+//   slideShow(5);
+//   slideShow(6);
+// };
+
 window.onload = function () {
-  slideShow(1);
-  slideShow(2);
-  slideShow(3);
-  slideShow(4);
-  slideShow(5);
-  slideShow(6);
-};
+    let slideShowsInitialized = new Set(); // 초기화된 슬라이드쇼를 추적
+  
+    const startSlideShow = (userNumber) => {
+      if (!slideShowsInitialized.has(userNumber)) {
+        slideShow(userNumber);
+        slideShowsInitialized.add(userNumber); // 슬라이드쇼가 초기화됨을 표시
+      }
+    };
+  
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      document.querySelectorAll(".sp-style-note-container").forEach((container, index) => {
+        if (scrollY > container.offsetTop - window.innerHeight / 2) {
+          startSlideShow(index + 1);
+        }
+      });
+    });
+  };
+  
