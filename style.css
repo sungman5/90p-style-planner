@@ -486,7 +486,6 @@
 .sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a {
   display: flex;
   gap: 16px;
-  width: fit-content;
 }
 .sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a:hover * {
   opacity: 0.8;
