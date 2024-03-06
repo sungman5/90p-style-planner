@@ -483,39 +483,43 @@
     padding: 0;
   }
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a {
   display: flex;
   gap: 16px;
+  width: fit-content;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li img {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a:hover * {
+  opacity: 0.8;
+}
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a img {
   width: 136px;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-name {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-name {
   font-weight: 700;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-price-group {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-price-group {
   display: flex;
   gap: 8px;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-price-group .sp-style-note-product-original {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-price-group .sp-style-note-product-original {
   text-decoration: line-through;
   color: #888;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-discount-rate {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-discount-rate {
   color: red;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-size {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-size {
   background-color: #e1e1e1;
   width: fit-content;
   padding: 4px 8px;
   border-radius: 4px;
 }
-.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li .sp-style-note-product-info .sp-style-note-product-size span {
+.sp-style-note-content .sp-style-note-content-body .sp-style-note-content-products li a .sp-style-note-product-info .sp-style-note-product-size span {
   font-weight: 700;
 }
 
