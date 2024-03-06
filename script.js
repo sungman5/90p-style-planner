@@ -33,6 +33,7 @@ function slideShow(userNumber) {
     } else {
       slideNum = 0; // 마지막 슬라이드에서 첫 번째 슬라이드로 리셋
       slide.style.transition = "none"; // 트랜지션 없이 즉시 첫 번째 위치로 이동
+      slide.style.transform = "translateX(0)"; // 트랜지션 없이 즉시 첫 번째 위치로 이동
     }
     setTimeout(() => {
       // transition 복구 및 슬라이드 이동
@@ -67,8 +68,7 @@ function slideShow(userNumber) {
 }
 
 window.onload = function () {
-
-slideShow(1);
+  slideShow(1);
   slideShow(2);
   slideShow(3);
   slideShow(4);
