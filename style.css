@@ -184,10 +184,32 @@
   font-weight: 700;
   margin-bottom: 4px;
 }
+@media (min-width: 1536px) {
+  .sp-content-1 .sp-title {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 1920px) {
+  .sp-content-1 .sp-title {
+    font-size: 64px;
+    margin-bottom: 16px;
+  }
+}
 .sp-content-1 .sp-sub-title {
   font-size: 20px;
   color: #888;
   margin-bottom: 16px;
+}
+@media (min-width: 1536px) {
+  .sp-content-1 .sp-sub-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1920px) {
+  .sp-content-1 .sp-sub-title {
+    font-size: 32px;
+  }
 }
 
 .sp-content-2 {
